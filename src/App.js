@@ -36,6 +36,17 @@ function App() {
   function showContactForm () {
       setShowForm(true);
   }
+  function hideContactForm () {
+      setShowForm(false);
+      if(formData){
+          setFormData({
+              id:'',
+              name:'',
+              username:'',
+              phone:'',
+          });
+      }
+  }
   const inputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -73,6 +84,7 @@ function App() {
               formData={formData}
               inputChange={inputChange}
               addNewContact={addNewContact}
+              hideContactForm={hideContactForm}
           />}
       </div>
   );

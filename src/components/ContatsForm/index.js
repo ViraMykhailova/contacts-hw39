@@ -1,5 +1,5 @@
 import styles from './contactsForm.module.css'
-function ContactsForm({formData,inputChange,addNewContact}) {
+function ContactsForm({formData,inputChange,addNewContact,hideContactForm}) {
     return (
         <div>
             <form onSubmit={addNewContact}>
@@ -27,7 +27,8 @@ function ContactsForm({formData,inputChange,addNewContact}) {
                     value={formData.phone}
                     onChange={inputChange}
                 />
-                <button type='submit' className={styles.addBtn} >Add</button>
+                <button type='submit' className={styles.addBtn}>Save</button>
+                <button className={styles.closeBtn} onClick={hideContactForm}>Close</button>
             </form>
         </div>
     );
