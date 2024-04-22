@@ -1,0 +1,22 @@
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.addBtn {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+}
+.addBtn:hover {
+    background-color: #b9e5d0;
+}
